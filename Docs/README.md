@@ -54,4 +54,39 @@ Na ovaj nacin mozemo generisati bilo koji notch filter implementiran kao IIR fil
 
 Pokretanjem ``SW/rework/build/zadatak3`` programa u terminalu se ispisuju koeficijenti IIR filtera izracunati funkcijom ``generate_notch_coeffs()``, i generise se ``Output2.wav`` ciji se graf i spektrogram vide na slikama iznad.
 
-![Zadatak 2 pokrenut](./Images/zadatak3_pokrenut.png)
+![Zadatak 3 pokrenut](./Images/zadatak3_pokrenut.png)
+
+## Zadatak 4
+
+Za kraj nam je ostalo da izvorni signal filtriramo sa filterima visih redova od onih iz prethodnih zadataka. Uz pomoc WinFilter-a generisemo FIR filtere 77-og i 129-og reda.
+
+![77th order FIR filter](./Images/winfilter_77th_order.png)
+![129th order FIR filter](./Images/winfilter_129th_order.png)
+
+Kako bismo dobili IIR filtere viseg reda zarad boljeg notch filtriranja, potrebno je da asmo pozovemo dva puta ``iir_basic()`` funkciju sa razlicitim history baferima. Time postizemo efekat IIR filtera 4-og, 6-og i visih redova po potrebi.
+
+```
+        // 6th order IIR
+        for (size_t i = 0; i < frames_read; i++) {
+            bufferL[i] = iir_basic(bufferL[i], b_coeffs, history_X1_L, 3, a_coeffs, history_Y1_L, 3);
+            bufferR[i] = iir_basic(bufferR[i], b_coeffs, history_X1_R, 3, a_coeffs, history_Y1_R, 3);
+        }
+        for (size_t i = 0; i < frames_read; i++) {
+            bufferL[i] = iir_basic(bufferL[i], b_coeffs, history_X2_L, 3, a_coeffs, history_Y2_L, 3);
+            bufferR[i] = iir_basic(bufferR[i], b_coeffs, history_X2_R, 3, a_coeffs, history_Y2_R, 3);
+        }
+        for (size_t i = 0; i < frames_read; i++) {
+            bufferL[i] = iir_basic(bufferL[i], b_coeffs, history_X3_L, 3, a_coeffs, history_Y3_L, 3);
+            bufferR[i] = iir_basic(bufferR[i], b_coeffs, history_X3_R, 3, a_coeffs, history_Y3_R, 3);
+        }
+```
+
+Kada izvorni signal filtriramo FIR-om 77-og reda i IIR-om 4-og reda dobijemo ovakav rezultat:
+
+![77th filtered signal plot](./Images/77_fir_4_iir_plot.png)
+![77th filtered signal spectrogram](./Images/77_fir_4_iir_spectrogram.png)
+
+A kada izvorni signal filtriramo FIR-om 129-og reda i IIR-om 6-og reda dobijemo ovakav rezultat:
+
+![129th filtered signal plot](./Images/129_fir_4_iir_plot.png)
+![129th filtered signal spectrogram](./Images/129_fir_4_iir_spectrogram.png)
