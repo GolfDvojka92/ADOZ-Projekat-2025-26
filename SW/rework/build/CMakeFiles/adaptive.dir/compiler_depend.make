@@ -90,7 +90,7 @@ CMakeFiles/adaptive.dir/main.c.o: /home/aljosa/git/adoz_projekat/SW/rework/main.
   /home/aljosa/git/adoz_projekat/SW/rework/high_pass_4350Hz.h \
   /home/aljosa/git/adoz_projekat/SW/rework/iir.h \
   /home/aljosa/git/adoz_projekat/SW/rework/low_pass_32th_order.h \
-  /home/aljosa/git/adoz_projekat/SW/rework/low_pass_7500Hhz.h \
+  /home/aljosa/git/adoz_projekat/SW/rework/low_pass_4350Hz.h \
   /home/aljosa/git/adoz_projekat/SW/rework/wav.h \
   /usr/include/alloca.h \
   /usr/include/bits/atomic_wide_counter.h \
@@ -332,8 +332,6 @@ CMakeFiles/adaptive.dir/adaptive_filter.c.o:
 
 /home/aljosa/git/adoz_projekat/SW/rework/IIR_low_pass_filters.h:
 
-/home/aljosa/git/adoz_projekat/SW/rework/low_pass_7500Hhz.h:
-
 /usr/include/bits/floatn.h:
 
 /usr/include/bits/floatn-common.h:
@@ -437,6 +435,8 @@ CMakeFiles/adaptive.dir/wav.c.o:
 /home/aljosa/git/adoz_projekat/SW/rework/main.c:
 
 /home/aljosa/git/adoz_projekat/SW/rework/high_pass_4350Hz.h:
+
+/home/aljosa/git/adoz_projekat/SW/rework/low_pass_4350Hz.h:
 
 /home/aljosa/git/adoz_projekat/SW/rework/wav.h:
 
