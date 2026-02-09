@@ -47,5 +47,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/adaptive.dir/DependInfo.cmake"
+  "CMakeFiles/zadatak1.dir/DependInfo.cmake"
+  "CMakeFiles/zadatak2.dir/DependInfo.cmake"
+  "CMakeFiles/zadatak3.dir/DependInfo.cmake"
   )

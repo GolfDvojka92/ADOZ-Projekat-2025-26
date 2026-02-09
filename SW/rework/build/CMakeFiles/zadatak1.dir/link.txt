@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/zadatak1.dir/link.d CMakeFiles/zadatak1.dir/zadatak1.c.o -o zadatak1

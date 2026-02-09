@@ -4,17 +4,13 @@
 #include <string.h>
 #include <sys/stat.h>
 #include <sys/types.h>
-#include "conv.h"
-#include "wav.h"
-#include "iir.h"
-#include "adaptive_filter.h"
-// #include "low_pass_8th_order.h"
-#include "high_pass_4350Hz.h"
-#include "low_pass_4350Hz.h"
-#include "low_pass_32th_order.h"
-#include "IIR_low_pass_filters.h"
-#include "fir.h"
-#include "stdint.h"
+#include <stdint.h>
+#include "../inc/direct_form_iir.h"
+#include "../inc/wav.h"
+#include "../inc/high_pass_4350Hz.h"
+#include "../inc/low_pass_4350Hz.h"
+#include "../inc/fir.h"
+#include "../inc/notch.h"
 
 #define N 48000
 #define AUDIO_IO_SIZE 256
@@ -39,18 +35,19 @@ int16_t tempL[AUDIO_IO_SIZE];
 int16_t tempR[AUDIO_IO_SIZE];
 int16_t bufferL[AUDIO_IO_SIZE];
 int16_t bufferR[AUDIO_IO_SIZE];
-int16_t adaptiveCoeffs[FILTER_ORDER];
-int16_t noiseFilter[AUDIO_IO_SIZE];
-int16_t history[FILTER_ORDER];
 int16_t historyFIR_L[H_PASS_ORDER];
 int16_t historyFIR_R[H_PASS_ORDER];
-int16_t history_x[2][3];
-int16_t history_y[2][3];
+int16_t history_X_L[3];
+int16_t history_X_R[3];
+int16_t history_Y_L[3];
+int16_t history_Y_R[3];
+int16_t b_coeffs[3];
+int16_t a_coeffs[3];
 
 int main(void)
 {
     const char *input_filename  = INPUT_FILE;
-    const char *output_filename = "output/output.wav";
+    const char *output_filename = "output/output2.wav";
 
     ensure_output_dir();
 
@@ -80,6 +77,7 @@ int main(void)
     size_t total_frames_written = 0;
 
     size_t frames_read;
+
     while ((frames_read = fread(interleavedIn, input_hdr.blockAlign, AUDIO_IO_SIZE, fin)) > 0)
     {
         // Deinterleave
@@ -92,6 +90,15 @@ int main(void)
         for (size_t i = 0; i < frames_read; i++) {
             bufferL[i] = fir_circular(inputL[i], high_pass_35th_order, historyFIR_L, H_PASS_ORDER, &stateL);
             bufferR[i] = fir_circular(inputR[i], high_pass_35th_order, historyFIR_R, H_PASS_ORDER, &stateR);
+        }
+        
+        // Generate notch filter coeffs
+        generate_notch_coeffs(N, 2000, 0.95, b_coeffs, a_coeffs);
+
+        // Filter the frames received from the FIR filter
+        for (size_t i = 0; i < frames_read; i++) {
+            bufferL[i] = iir_basic(bufferL[i], b_coeffs, history_X_L, 3, a_coeffs, history_Y_L, 3);
+            bufferR[i] = iir_basic(bufferR[i], b_coeffs, history_X_R, 3, a_coeffs, history_Y_R, 3);
         }
 
         // Interleave and write

@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/zadatak3.dir/link.d CMakeFiles/zadatak3.dir/zadatak3.c.o CMakeFiles/zadatak3.dir/wav.c.o CMakeFiles/zadatak3.dir/fir.c.o CMakeFiles/zadatak3.dir/direct_form_iir.c.o CMakeFiles/zadatak3.dir/notch.c.o -o zadatak3  -lm

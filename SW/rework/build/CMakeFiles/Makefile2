@@ -63,11 +63,15 @@ CMAKE_BINARY_DIR = /home/aljosa/git/adoz_projekat/SW/rework/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/adaptive.dir/all
+all: CMakeFiles/zadatak1.dir/all
+all: CMakeFiles/zadatak2.dir/all
+all: CMakeFiles/zadatak3.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/adaptive.dir/codegen
+codegen: CMakeFiles/zadatak1.dir/codegen
+codegen: CMakeFiles/zadatak2.dir/codegen
+codegen: CMakeFiles/zadatak3.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,40 +79,106 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/adaptive.dir/clean
+clean: CMakeFiles/zadatak1.dir/clean
+clean: CMakeFiles/zadatak2.dir/clean
+clean: CMakeFiles/zadatak3.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/adaptive.dir
+# Target rules for target CMakeFiles/zadatak1.dir
 
 # All Build rule for target.
-CMakeFiles/adaptive.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adaptive.dir/build.make CMakeFiles/adaptive.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adaptive.dir/build.make CMakeFiles/adaptive.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target adaptive"
-.PHONY : CMakeFiles/adaptive.dir/all
+CMakeFiles/zadatak1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak1.dir/build.make CMakeFiles/zadatak1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak1.dir/build.make CMakeFiles/zadatak1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles --progress-num=1,2 "Built target zadatak1"
+.PHONY : CMakeFiles/zadatak1.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/adaptive.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/adaptive.dir/all
+CMakeFiles/zadatak1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/zadatak1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles 0
-.PHONY : CMakeFiles/adaptive.dir/rule
+.PHONY : CMakeFiles/zadatak1.dir/rule
 
 # Convenience name for target.
-adaptive: CMakeFiles/adaptive.dir/rule
-.PHONY : adaptive
+zadatak1: CMakeFiles/zadatak1.dir/rule
+.PHONY : zadatak1
 
 # codegen rule for target.
-CMakeFiles/adaptive.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adaptive.dir/build.make CMakeFiles/adaptive.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target adaptive"
-.PHONY : CMakeFiles/adaptive.dir/codegen
+CMakeFiles/zadatak1.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak1.dir/build.make CMakeFiles/zadatak1.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles --progress-num=1,2 "Finished codegen for target zadatak1"
+.PHONY : CMakeFiles/zadatak1.dir/codegen
 
 # clean rule for target.
-CMakeFiles/adaptive.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adaptive.dir/build.make CMakeFiles/adaptive.dir/clean
-.PHONY : CMakeFiles/adaptive.dir/clean
+CMakeFiles/zadatak1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak1.dir/build.make CMakeFiles/zadatak1.dir/clean
+.PHONY : CMakeFiles/zadatak1.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/zadatak2.dir
+
+# All Build rule for target.
+CMakeFiles/zadatak2.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles --progress-num=3,4,5,6 "Built target zadatak2"
+.PHONY : CMakeFiles/zadatak2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/zadatak2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/zadatak2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles 0
+.PHONY : CMakeFiles/zadatak2.dir/rule
+
+# Convenience name for target.
+zadatak2: CMakeFiles/zadatak2.dir/rule
+.PHONY : zadatak2
+
+# codegen rule for target.
+CMakeFiles/zadatak2.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles --progress-num=3,4,5,6 "Finished codegen for target zadatak2"
+.PHONY : CMakeFiles/zadatak2.dir/codegen
+
+# clean rule for target.
+CMakeFiles/zadatak2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/clean
+.PHONY : CMakeFiles/zadatak2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/zadatak3.dir
+
+# All Build rule for target.
+CMakeFiles/zadatak3.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles --progress-num=7,8,9,10,11,12 "Built target zadatak3"
+.PHONY : CMakeFiles/zadatak3.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/zadatak3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/zadatak3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles 0
+.PHONY : CMakeFiles/zadatak3.dir/rule
+
+# Convenience name for target.
+zadatak3: CMakeFiles/zadatak3.dir/rule
+.PHONY : zadatak3
+
+# codegen rule for target.
+CMakeFiles/zadatak3.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles --progress-num=7,8,9,10,11,12 "Finished codegen for target zadatak3"
+.PHONY : CMakeFiles/zadatak3.dir/codegen
+
+# clean rule for target.
+CMakeFiles/zadatak3.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/clean
+.PHONY : CMakeFiles/zadatak3.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

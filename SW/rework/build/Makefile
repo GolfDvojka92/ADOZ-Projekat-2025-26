@@ -117,48 +117,75 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named adaptive
+# Target rules for targets named zadatak1
 
 # Build rule for target.
-adaptive: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 adaptive
-.PHONY : adaptive
+zadatak1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zadatak1
+.PHONY : zadatak1
 
 # fast build rule for target.
-adaptive/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adaptive.dir/build.make CMakeFiles/adaptive.dir/build
-.PHONY : adaptive/fast
+zadatak1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak1.dir/build.make CMakeFiles/zadatak1.dir/build
+.PHONY : zadatak1/fast
 
-adaptive_filter.o: adaptive_filter.c.o
-.PHONY : adaptive_filter.o
+#=============================================================================
+# Target rules for targets named zadatak2
+
+# Build rule for target.
+zadatak2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zadatak2
+.PHONY : zadatak2
+
+# fast build rule for target.
+zadatak2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/build
+.PHONY : zadatak2/fast
+
+#=============================================================================
+# Target rules for targets named zadatak3
+
+# Build rule for target.
+zadatak3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zadatak3
+.PHONY : zadatak3
+
+# fast build rule for target.
+zadatak3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/build
+.PHONY : zadatak3/fast
+
+direct_form_iir.o: direct_form_iir.c.o
+.PHONY : direct_form_iir.o
 
 # target to build an object file
-adaptive_filter.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adaptive.dir/build.make CMakeFiles/adaptive.dir/adaptive_filter.c.o
-.PHONY : adaptive_filter.c.o
+direct_form_iir.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/direct_form_iir.c.o
+.PHONY : direct_form_iir.c.o
 
-adaptive_filter.i: adaptive_filter.c.i
-.PHONY : adaptive_filter.i
+direct_form_iir.i: direct_form_iir.c.i
+.PHONY : direct_form_iir.i
 
 # target to preprocess a source file
-adaptive_filter.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adaptive.dir/build.make CMakeFiles/adaptive.dir/adaptive_filter.c.i
-.PHONY : adaptive_filter.c.i
+direct_form_iir.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/direct_form_iir.c.i
+.PHONY : direct_form_iir.c.i
 
-adaptive_filter.s: adaptive_filter.c.s
-.PHONY : adaptive_filter.s
+direct_form_iir.s: direct_form_iir.c.s
+.PHONY : direct_form_iir.s
 
 # target to generate assembly for a file
-adaptive_filter.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adaptive.dir/build.make CMakeFiles/adaptive.dir/adaptive_filter.c.s
-.PHONY : adaptive_filter.c.s
+direct_form_iir.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/direct_form_iir.c.s
+.PHONY : direct_form_iir.c.s
 
 fir.o: fir.c.o
 .PHONY : fir.o
 
 # target to build an object file
 fir.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adaptive.dir/build.make CMakeFiles/adaptive.dir/fir.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/fir.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/fir.c.o
 .PHONY : fir.c.o
 
 fir.i: fir.c.i
@@ -166,7 +193,8 @@ fir.i: fir.c.i
 
 # target to preprocess a source file
 fir.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adaptive.dir/build.make CMakeFiles/adaptive.dir/fir.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/fir.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/fir.c.i
 .PHONY : fir.c.i
 
 fir.s: fir.c.s
@@ -174,63 +202,41 @@ fir.s: fir.c.s
 
 # target to generate assembly for a file
 fir.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adaptive.dir/build.make CMakeFiles/adaptive.dir/fir.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/fir.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/fir.c.s
 .PHONY : fir.c.s
 
-iir.o: iir.c.o
-.PHONY : iir.o
+notch.o: notch.c.o
+.PHONY : notch.o
 
 # target to build an object file
-iir.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adaptive.dir/build.make CMakeFiles/adaptive.dir/iir.c.o
-.PHONY : iir.c.o
+notch.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/notch.c.o
+.PHONY : notch.c.o
 
-iir.i: iir.c.i
-.PHONY : iir.i
-
-# target to preprocess a source file
-iir.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adaptive.dir/build.make CMakeFiles/adaptive.dir/iir.c.i
-.PHONY : iir.c.i
-
-iir.s: iir.c.s
-.PHONY : iir.s
-
-# target to generate assembly for a file
-iir.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adaptive.dir/build.make CMakeFiles/adaptive.dir/iir.c.s
-.PHONY : iir.c.s
-
-main.o: main.c.o
-.PHONY : main.o
-
-# target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adaptive.dir/build.make CMakeFiles/adaptive.dir/main.c.o
-.PHONY : main.c.o
-
-main.i: main.c.i
-.PHONY : main.i
+notch.i: notch.c.i
+.PHONY : notch.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adaptive.dir/build.make CMakeFiles/adaptive.dir/main.c.i
-.PHONY : main.c.i
+notch.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/notch.c.i
+.PHONY : notch.c.i
 
-main.s: main.c.s
-.PHONY : main.s
+notch.s: notch.c.s
+.PHONY : notch.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adaptive.dir/build.make CMakeFiles/adaptive.dir/main.c.s
-.PHONY : main.c.s
+notch.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/notch.c.s
+.PHONY : notch.c.s
 
 wav.o: wav.c.o
 .PHONY : wav.o
 
 # target to build an object file
 wav.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adaptive.dir/build.make CMakeFiles/adaptive.dir/wav.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/wav.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/wav.c.o
 .PHONY : wav.c.o
 
 wav.i: wav.c.i
@@ -238,7 +244,8 @@ wav.i: wav.c.i
 
 # target to preprocess a source file
 wav.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adaptive.dir/build.make CMakeFiles/adaptive.dir/wav.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/wav.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/wav.c.i
 .PHONY : wav.c.i
 
 wav.s: wav.c.s
@@ -246,8 +253,81 @@ wav.s: wav.c.s
 
 # target to generate assembly for a file
 wav.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/adaptive.dir/build.make CMakeFiles/adaptive.dir/wav.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/wav.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/wav.c.s
 .PHONY : wav.c.s
+
+zadatak1.o: zadatak1.c.o
+.PHONY : zadatak1.o
+
+# target to build an object file
+zadatak1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak1.dir/build.make CMakeFiles/zadatak1.dir/zadatak1.c.o
+.PHONY : zadatak1.c.o
+
+zadatak1.i: zadatak1.c.i
+.PHONY : zadatak1.i
+
+# target to preprocess a source file
+zadatak1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak1.dir/build.make CMakeFiles/zadatak1.dir/zadatak1.c.i
+.PHONY : zadatak1.c.i
+
+zadatak1.s: zadatak1.c.s
+.PHONY : zadatak1.s
+
+# target to generate assembly for a file
+zadatak1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak1.dir/build.make CMakeFiles/zadatak1.dir/zadatak1.c.s
+.PHONY : zadatak1.c.s
+
+zadatak2.o: zadatak2.c.o
+.PHONY : zadatak2.o
+
+# target to build an object file
+zadatak2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/zadatak2.c.o
+.PHONY : zadatak2.c.o
+
+zadatak2.i: zadatak2.c.i
+.PHONY : zadatak2.i
+
+# target to preprocess a source file
+zadatak2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/zadatak2.c.i
+.PHONY : zadatak2.c.i
+
+zadatak2.s: zadatak2.c.s
+.PHONY : zadatak2.s
+
+# target to generate assembly for a file
+zadatak2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/zadatak2.c.s
+.PHONY : zadatak2.c.s
+
+zadatak3.o: zadatak3.c.o
+.PHONY : zadatak3.o
+
+# target to build an object file
+zadatak3.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/zadatak3.c.o
+.PHONY : zadatak3.c.o
+
+zadatak3.i: zadatak3.c.i
+.PHONY : zadatak3.i
+
+# target to preprocess a source file
+zadatak3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/zadatak3.c.i
+.PHONY : zadatak3.c.i
+
+zadatak3.s: zadatak3.c.s
+.PHONY : zadatak3.s
+
+# target to generate assembly for a file
+zadatak3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/zadatak3.c.s
+.PHONY : zadatak3.c.s
 
 # Help Target
 help:
@@ -257,22 +337,30 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... adaptive"
-	@echo "... adaptive_filter.o"
-	@echo "... adaptive_filter.i"
-	@echo "... adaptive_filter.s"
+	@echo "... zadatak1"
+	@echo "... zadatak2"
+	@echo "... zadatak3"
+	@echo "... direct_form_iir.o"
+	@echo "... direct_form_iir.i"
+	@echo "... direct_form_iir.s"
 	@echo "... fir.o"
 	@echo "... fir.i"
 	@echo "... fir.s"
-	@echo "... iir.o"
-	@echo "... iir.i"
-	@echo "... iir.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... notch.o"
+	@echo "... notch.i"
+	@echo "... notch.s"
 	@echo "... wav.o"
 	@echo "... wav.i"
 	@echo "... wav.s"
+	@echo "... zadatak1.o"
+	@echo "... zadatak1.i"
+	@echo "... zadatak1.s"
+	@echo "... zadatak2.o"
+	@echo "... zadatak2.i"
+	@echo "... zadatak2.s"
+	@echo "... zadatak3.o"
+	@echo "... zadatak3.i"
+	@echo "... zadatak3.s"
 .PHONY : help
 
 

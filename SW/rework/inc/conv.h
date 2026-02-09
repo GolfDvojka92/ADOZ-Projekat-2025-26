@@ -2,6 +2,7 @@
 #define CONV_H
 
 #include "stdint.h"
+#include <stdio.h>
 
 static inline int16_t signed_multiply(int16_t op_1, int16_t op_2)
 {
