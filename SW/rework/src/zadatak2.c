@@ -7,7 +7,6 @@
 #include <stdint.h>
 #include "../inc/wav.h"
 #include "../inc/high_pass_4350Hz.h"
-#include "../inc/low_pass_4350Hz.h"
 #include "../inc/fir.h"
 
 #define N 48000
@@ -90,7 +89,7 @@ int main(void)
         total_frames_written += frames_read;
     }
 
-    printf("High pass 4350Hz 35th order FIR filter coeffitients:\n");
+    printf("High pass 4350Hz 35th order FIR filter coefficients:\n");
     for (int i = 0; i < H_PASS_ORDER; i++) {
         if (i % 5 == 0) printf("\n");
         printf("%2d: %5d ", i + 1, high_pass_35th_order[i]);

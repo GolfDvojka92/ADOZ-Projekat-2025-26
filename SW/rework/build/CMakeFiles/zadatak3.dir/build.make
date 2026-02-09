@@ -72,92 +72,92 @@ include CMakeFiles/zadatak3.dir/flags.make
 CMakeFiles/zadatak3.dir/codegen:
 .PHONY : CMakeFiles/zadatak3.dir/codegen
 
-CMakeFiles/zadatak3.dir/zadatak3.c.o: CMakeFiles/zadatak3.dir/flags.make
-CMakeFiles/zadatak3.dir/zadatak3.c.o: /home/aljosa/git/adoz_projekat/SW/rework/zadatak3.c
-CMakeFiles/zadatak3.dir/zadatak3.c.o: CMakeFiles/zadatak3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/zadatak3.dir/zadatak3.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zadatak3.dir/zadatak3.c.o -MF CMakeFiles/zadatak3.dir/zadatak3.c.o.d -o CMakeFiles/zadatak3.dir/zadatak3.c.o -c /home/aljosa/git/adoz_projekat/SW/rework/zadatak3.c
+CMakeFiles/zadatak3.dir/src/zadatak3.c.o: CMakeFiles/zadatak3.dir/flags.make
+CMakeFiles/zadatak3.dir/src/zadatak3.c.o: /home/aljosa/git/adoz_projekat/SW/rework/src/zadatak3.c
+CMakeFiles/zadatak3.dir/src/zadatak3.c.o: CMakeFiles/zadatak3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/zadatak3.dir/src/zadatak3.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zadatak3.dir/src/zadatak3.c.o -MF CMakeFiles/zadatak3.dir/src/zadatak3.c.o.d -o CMakeFiles/zadatak3.dir/src/zadatak3.c.o -c /home/aljosa/git/adoz_projekat/SW/rework/src/zadatak3.c
 
-CMakeFiles/zadatak3.dir/zadatak3.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/zadatak3.dir/zadatak3.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aljosa/git/adoz_projekat/SW/rework/zadatak3.c > CMakeFiles/zadatak3.dir/zadatak3.c.i
+CMakeFiles/zadatak3.dir/src/zadatak3.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/zadatak3.dir/src/zadatak3.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aljosa/git/adoz_projekat/SW/rework/src/zadatak3.c > CMakeFiles/zadatak3.dir/src/zadatak3.c.i
 
-CMakeFiles/zadatak3.dir/zadatak3.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/zadatak3.dir/zadatak3.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aljosa/git/adoz_projekat/SW/rework/zadatak3.c -o CMakeFiles/zadatak3.dir/zadatak3.c.s
+CMakeFiles/zadatak3.dir/src/zadatak3.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/zadatak3.dir/src/zadatak3.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aljosa/git/adoz_projekat/SW/rework/src/zadatak3.c -o CMakeFiles/zadatak3.dir/src/zadatak3.c.s
 
-CMakeFiles/zadatak3.dir/wav.c.o: CMakeFiles/zadatak3.dir/flags.make
-CMakeFiles/zadatak3.dir/wav.c.o: /home/aljosa/git/adoz_projekat/SW/rework/wav.c
-CMakeFiles/zadatak3.dir/wav.c.o: CMakeFiles/zadatak3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/zadatak3.dir/wav.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zadatak3.dir/wav.c.o -MF CMakeFiles/zadatak3.dir/wav.c.o.d -o CMakeFiles/zadatak3.dir/wav.c.o -c /home/aljosa/git/adoz_projekat/SW/rework/wav.c
+CMakeFiles/zadatak3.dir/src/wav.c.o: CMakeFiles/zadatak3.dir/flags.make
+CMakeFiles/zadatak3.dir/src/wav.c.o: /home/aljosa/git/adoz_projekat/SW/rework/src/wav.c
+CMakeFiles/zadatak3.dir/src/wav.c.o: CMakeFiles/zadatak3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/zadatak3.dir/src/wav.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zadatak3.dir/src/wav.c.o -MF CMakeFiles/zadatak3.dir/src/wav.c.o.d -o CMakeFiles/zadatak3.dir/src/wav.c.o -c /home/aljosa/git/adoz_projekat/SW/rework/src/wav.c
 
-CMakeFiles/zadatak3.dir/wav.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/zadatak3.dir/wav.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aljosa/git/adoz_projekat/SW/rework/wav.c > CMakeFiles/zadatak3.dir/wav.c.i
+CMakeFiles/zadatak3.dir/src/wav.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/zadatak3.dir/src/wav.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aljosa/git/adoz_projekat/SW/rework/src/wav.c > CMakeFiles/zadatak3.dir/src/wav.c.i
 
-CMakeFiles/zadatak3.dir/wav.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/zadatak3.dir/wav.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aljosa/git/adoz_projekat/SW/rework/wav.c -o CMakeFiles/zadatak3.dir/wav.c.s
+CMakeFiles/zadatak3.dir/src/wav.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/zadatak3.dir/src/wav.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aljosa/git/adoz_projekat/SW/rework/src/wav.c -o CMakeFiles/zadatak3.dir/src/wav.c.s
 
-CMakeFiles/zadatak3.dir/fir.c.o: CMakeFiles/zadatak3.dir/flags.make
-CMakeFiles/zadatak3.dir/fir.c.o: /home/aljosa/git/adoz_projekat/SW/rework/fir.c
-CMakeFiles/zadatak3.dir/fir.c.o: CMakeFiles/zadatak3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/zadatak3.dir/fir.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zadatak3.dir/fir.c.o -MF CMakeFiles/zadatak3.dir/fir.c.o.d -o CMakeFiles/zadatak3.dir/fir.c.o -c /home/aljosa/git/adoz_projekat/SW/rework/fir.c
+CMakeFiles/zadatak3.dir/src/fir.c.o: CMakeFiles/zadatak3.dir/flags.make
+CMakeFiles/zadatak3.dir/src/fir.c.o: /home/aljosa/git/adoz_projekat/SW/rework/src/fir.c
+CMakeFiles/zadatak3.dir/src/fir.c.o: CMakeFiles/zadatak3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/zadatak3.dir/src/fir.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zadatak3.dir/src/fir.c.o -MF CMakeFiles/zadatak3.dir/src/fir.c.o.d -o CMakeFiles/zadatak3.dir/src/fir.c.o -c /home/aljosa/git/adoz_projekat/SW/rework/src/fir.c
 
-CMakeFiles/zadatak3.dir/fir.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/zadatak3.dir/fir.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aljosa/git/adoz_projekat/SW/rework/fir.c > CMakeFiles/zadatak3.dir/fir.c.i
+CMakeFiles/zadatak3.dir/src/fir.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/zadatak3.dir/src/fir.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aljosa/git/adoz_projekat/SW/rework/src/fir.c > CMakeFiles/zadatak3.dir/src/fir.c.i
 
-CMakeFiles/zadatak3.dir/fir.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/zadatak3.dir/fir.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aljosa/git/adoz_projekat/SW/rework/fir.c -o CMakeFiles/zadatak3.dir/fir.c.s
+CMakeFiles/zadatak3.dir/src/fir.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/zadatak3.dir/src/fir.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aljosa/git/adoz_projekat/SW/rework/src/fir.c -o CMakeFiles/zadatak3.dir/src/fir.c.s
 
-CMakeFiles/zadatak3.dir/direct_form_iir.c.o: CMakeFiles/zadatak3.dir/flags.make
-CMakeFiles/zadatak3.dir/direct_form_iir.c.o: /home/aljosa/git/adoz_projekat/SW/rework/direct_form_iir.c
-CMakeFiles/zadatak3.dir/direct_form_iir.c.o: CMakeFiles/zadatak3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/zadatak3.dir/direct_form_iir.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zadatak3.dir/direct_form_iir.c.o -MF CMakeFiles/zadatak3.dir/direct_form_iir.c.o.d -o CMakeFiles/zadatak3.dir/direct_form_iir.c.o -c /home/aljosa/git/adoz_projekat/SW/rework/direct_form_iir.c
+CMakeFiles/zadatak3.dir/src/direct_form_iir.c.o: CMakeFiles/zadatak3.dir/flags.make
+CMakeFiles/zadatak3.dir/src/direct_form_iir.c.o: /home/aljosa/git/adoz_projekat/SW/rework/src/direct_form_iir.c
+CMakeFiles/zadatak3.dir/src/direct_form_iir.c.o: CMakeFiles/zadatak3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/zadatak3.dir/src/direct_form_iir.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zadatak3.dir/src/direct_form_iir.c.o -MF CMakeFiles/zadatak3.dir/src/direct_form_iir.c.o.d -o CMakeFiles/zadatak3.dir/src/direct_form_iir.c.o -c /home/aljosa/git/adoz_projekat/SW/rework/src/direct_form_iir.c
 
-CMakeFiles/zadatak3.dir/direct_form_iir.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/zadatak3.dir/direct_form_iir.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aljosa/git/adoz_projekat/SW/rework/direct_form_iir.c > CMakeFiles/zadatak3.dir/direct_form_iir.c.i
+CMakeFiles/zadatak3.dir/src/direct_form_iir.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/zadatak3.dir/src/direct_form_iir.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aljosa/git/adoz_projekat/SW/rework/src/direct_form_iir.c > CMakeFiles/zadatak3.dir/src/direct_form_iir.c.i
 
-CMakeFiles/zadatak3.dir/direct_form_iir.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/zadatak3.dir/direct_form_iir.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aljosa/git/adoz_projekat/SW/rework/direct_form_iir.c -o CMakeFiles/zadatak3.dir/direct_form_iir.c.s
+CMakeFiles/zadatak3.dir/src/direct_form_iir.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/zadatak3.dir/src/direct_form_iir.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aljosa/git/adoz_projekat/SW/rework/src/direct_form_iir.c -o CMakeFiles/zadatak3.dir/src/direct_form_iir.c.s
 
-CMakeFiles/zadatak3.dir/notch.c.o: CMakeFiles/zadatak3.dir/flags.make
-CMakeFiles/zadatak3.dir/notch.c.o: /home/aljosa/git/adoz_projekat/SW/rework/notch.c
-CMakeFiles/zadatak3.dir/notch.c.o: CMakeFiles/zadatak3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/zadatak3.dir/notch.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zadatak3.dir/notch.c.o -MF CMakeFiles/zadatak3.dir/notch.c.o.d -o CMakeFiles/zadatak3.dir/notch.c.o -c /home/aljosa/git/adoz_projekat/SW/rework/notch.c
+CMakeFiles/zadatak3.dir/src/notch.c.o: CMakeFiles/zadatak3.dir/flags.make
+CMakeFiles/zadatak3.dir/src/notch.c.o: /home/aljosa/git/adoz_projekat/SW/rework/src/notch.c
+CMakeFiles/zadatak3.dir/src/notch.c.o: CMakeFiles/zadatak3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/zadatak3.dir/src/notch.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zadatak3.dir/src/notch.c.o -MF CMakeFiles/zadatak3.dir/src/notch.c.o.d -o CMakeFiles/zadatak3.dir/src/notch.c.o -c /home/aljosa/git/adoz_projekat/SW/rework/src/notch.c
 
-CMakeFiles/zadatak3.dir/notch.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/zadatak3.dir/notch.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aljosa/git/adoz_projekat/SW/rework/notch.c > CMakeFiles/zadatak3.dir/notch.c.i
+CMakeFiles/zadatak3.dir/src/notch.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/zadatak3.dir/src/notch.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aljosa/git/adoz_projekat/SW/rework/src/notch.c > CMakeFiles/zadatak3.dir/src/notch.c.i
 
-CMakeFiles/zadatak3.dir/notch.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/zadatak3.dir/notch.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aljosa/git/adoz_projekat/SW/rework/notch.c -o CMakeFiles/zadatak3.dir/notch.c.s
+CMakeFiles/zadatak3.dir/src/notch.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/zadatak3.dir/src/notch.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aljosa/git/adoz_projekat/SW/rework/src/notch.c -o CMakeFiles/zadatak3.dir/src/notch.c.s
 
 # Object files for target zadatak3
 zadatak3_OBJECTS = \
-"CMakeFiles/zadatak3.dir/zadatak3.c.o" \
-"CMakeFiles/zadatak3.dir/wav.c.o" \
-"CMakeFiles/zadatak3.dir/fir.c.o" \
-"CMakeFiles/zadatak3.dir/direct_form_iir.c.o" \
-"CMakeFiles/zadatak3.dir/notch.c.o"
+"CMakeFiles/zadatak3.dir/src/zadatak3.c.o" \
+"CMakeFiles/zadatak3.dir/src/wav.c.o" \
+"CMakeFiles/zadatak3.dir/src/fir.c.o" \
+"CMakeFiles/zadatak3.dir/src/direct_form_iir.c.o" \
+"CMakeFiles/zadatak3.dir/src/notch.c.o"
 
 # External object files for target zadatak3
 zadatak3_EXTERNAL_OBJECTS =
 
-zadatak3: CMakeFiles/zadatak3.dir/zadatak3.c.o
-zadatak3: CMakeFiles/zadatak3.dir/wav.c.o
-zadatak3: CMakeFiles/zadatak3.dir/fir.c.o
-zadatak3: CMakeFiles/zadatak3.dir/direct_form_iir.c.o
-zadatak3: CMakeFiles/zadatak3.dir/notch.c.o
+zadatak3: CMakeFiles/zadatak3.dir/src/zadatak3.c.o
+zadatak3: CMakeFiles/zadatak3.dir/src/wav.c.o
+zadatak3: CMakeFiles/zadatak3.dir/src/fir.c.o
+zadatak3: CMakeFiles/zadatak3.dir/src/direct_form_iir.c.o
+zadatak3: CMakeFiles/zadatak3.dir/src/notch.c.o
 zadatak3: CMakeFiles/zadatak3.dir/build.make
 zadatak3: CMakeFiles/zadatak3.dir/compiler_depend.ts
 zadatak3: CMakeFiles/zadatak3.dir/link.txt

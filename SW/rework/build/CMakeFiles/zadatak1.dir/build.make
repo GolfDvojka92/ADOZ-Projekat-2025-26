@@ -72,28 +72,28 @@ include CMakeFiles/zadatak1.dir/flags.make
 CMakeFiles/zadatak1.dir/codegen:
 .PHONY : CMakeFiles/zadatak1.dir/codegen
 
-CMakeFiles/zadatak1.dir/zadatak1.c.o: CMakeFiles/zadatak1.dir/flags.make
-CMakeFiles/zadatak1.dir/zadatak1.c.o: /home/aljosa/git/adoz_projekat/SW/rework/zadatak1.c
-CMakeFiles/zadatak1.dir/zadatak1.c.o: CMakeFiles/zadatak1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/zadatak1.dir/zadatak1.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zadatak1.dir/zadatak1.c.o -MF CMakeFiles/zadatak1.dir/zadatak1.c.o.d -o CMakeFiles/zadatak1.dir/zadatak1.c.o -c /home/aljosa/git/adoz_projekat/SW/rework/zadatak1.c
+CMakeFiles/zadatak1.dir/src/zadatak1.c.o: CMakeFiles/zadatak1.dir/flags.make
+CMakeFiles/zadatak1.dir/src/zadatak1.c.o: /home/aljosa/git/adoz_projekat/SW/rework/src/zadatak1.c
+CMakeFiles/zadatak1.dir/src/zadatak1.c.o: CMakeFiles/zadatak1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/zadatak1.dir/src/zadatak1.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/zadatak1.dir/src/zadatak1.c.o -MF CMakeFiles/zadatak1.dir/src/zadatak1.c.o.d -o CMakeFiles/zadatak1.dir/src/zadatak1.c.o -c /home/aljosa/git/adoz_projekat/SW/rework/src/zadatak1.c
 
-CMakeFiles/zadatak1.dir/zadatak1.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/zadatak1.dir/zadatak1.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aljosa/git/adoz_projekat/SW/rework/zadatak1.c > CMakeFiles/zadatak1.dir/zadatak1.c.i
+CMakeFiles/zadatak1.dir/src/zadatak1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/zadatak1.dir/src/zadatak1.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aljosa/git/adoz_projekat/SW/rework/src/zadatak1.c > CMakeFiles/zadatak1.dir/src/zadatak1.c.i
 
-CMakeFiles/zadatak1.dir/zadatak1.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/zadatak1.dir/zadatak1.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aljosa/git/adoz_projekat/SW/rework/zadatak1.c -o CMakeFiles/zadatak1.dir/zadatak1.c.s
+CMakeFiles/zadatak1.dir/src/zadatak1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/zadatak1.dir/src/zadatak1.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aljosa/git/adoz_projekat/SW/rework/src/zadatak1.c -o CMakeFiles/zadatak1.dir/src/zadatak1.c.s
 
 # Object files for target zadatak1
 zadatak1_OBJECTS = \
-"CMakeFiles/zadatak1.dir/zadatak1.c.o"
+"CMakeFiles/zadatak1.dir/src/zadatak1.c.o"
 
 # External object files for target zadatak1
 zadatak1_EXTERNAL_OBJECTS =
 
-zadatak1: CMakeFiles/zadatak1.dir/zadatak1.c.o
+zadatak1: CMakeFiles/zadatak1.dir/src/zadatak1.c.o
 zadatak1: CMakeFiles/zadatak1.dir/build.make
 zadatak1: CMakeFiles/zadatak1.dir/compiler_depend.ts
 zadatak1: CMakeFiles/zadatak1.dir/link.txt

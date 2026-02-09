@@ -2,11 +2,11 @@ zadatak3: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o \
-  CMakeFiles/zadatak3.dir/zadatak3.c.o \
-  CMakeFiles/zadatak3.dir/wav.c.o \
-  CMakeFiles/zadatak3.dir/fir.c.o \
-  CMakeFiles/zadatak3.dir/direct_form_iir.c.o \
-  CMakeFiles/zadatak3.dir/notch.c.o \
+  CMakeFiles/zadatak3.dir/src/zadatak3.c.o \
+  CMakeFiles/zadatak3.dir/src/wav.c.o \
+  CMakeFiles/zadatak3.dir/src/fir.c.o \
+  CMakeFiles/zadatak3.dir/src/direct_form_iir.c.o \
+  CMakeFiles/zadatak3.dir/src/notch.c.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libm.so \
@@ -40,15 +40,15 @@ zadatak3: \
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o:
 
-CMakeFiles/zadatak3.dir/zadatak3.c.o:
+CMakeFiles/zadatak3.dir/src/zadatak3.c.o:
 
-CMakeFiles/zadatak3.dir/wav.c.o:
+CMakeFiles/zadatak3.dir/src/wav.c.o:
 
-CMakeFiles/zadatak3.dir/fir.c.o:
+CMakeFiles/zadatak3.dir/src/fir.c.o:
 
-CMakeFiles/zadatak3.dir/direct_form_iir.c.o:
+CMakeFiles/zadatak3.dir/src/direct_form_iir.c.o:
 
-CMakeFiles/zadatak3.dir/notch.c.o:
+CMakeFiles/zadatak3.dir/src/notch.c.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libm.so:
 

@@ -7,8 +7,8 @@
 #include <stdint.h>
 #include "../inc/direct_form_iir.h"
 #include "../inc/wav.h"
-#include "../inc/high_pass_4350Hz.h"
-#include "../inc/low_pass_4350Hz.h"
+// #include "../inc/high_pass_77th_order.h"
+#include "../inc/high_pass_129th_order.h"
 #include "../inc/fir.h"
 #include "../inc/notch.h"
 
@@ -37,17 +37,25 @@ int16_t bufferL[AUDIO_IO_SIZE];
 int16_t bufferR[AUDIO_IO_SIZE];
 int16_t historyFIR_L[H_PASS_ORDER];
 int16_t historyFIR_R[H_PASS_ORDER];
-int16_t history_X_L[3];
-int16_t history_X_R[3];
-int16_t history_Y_L[3];
-int16_t history_Y_R[3];
+int16_t history_X1_L[3];
+int16_t history_X1_R[3];
+int16_t history_Y1_L[3];
+int16_t history_Y1_R[3];
+int16_t history_X2_L[3];
+int16_t history_X2_R[3];
+int16_t history_Y2_L[3];
+int16_t history_Y2_R[3];
+int16_t history_X3_L[3];
+int16_t history_X3_R[3];
+int16_t history_Y3_L[3];
+int16_t history_Y3_R[3];
 int16_t b_coeffs[3];
 int16_t a_coeffs[3];
 
 int main(void)
 {
     const char *input_filename  = INPUT_FILE;
-    const char *output_filename = "output/output2.wav";
+    const char *output_filename = "output/outputFinal.wav";
 
     ensure_output_dir();
 
@@ -88,17 +96,25 @@ int main(void)
 
         // Filter ALL frames_read, not half
         for (size_t i = 0; i < frames_read; i++) {
-            bufferL[i] = fir_circular(inputL[i], high_pass_35th_order, historyFIR_L, H_PASS_ORDER, &stateL);
-            bufferR[i] = fir_circular(inputR[i], high_pass_35th_order, historyFIR_R, H_PASS_ORDER, &stateR);
+            bufferL[i] = fir_circular(inputL[i], high_pass_129th_order, historyFIR_L, H_PASS_ORDER, &stateL);
+            bufferR[i] = fir_circular(inputR[i], high_pass_129th_order, historyFIR_R, H_PASS_ORDER, &stateR);
         }
         
         // Generate notch filter coeffs
         generate_notch_coeffs(N, 2000, 0.95, b_coeffs, a_coeffs);
 
-        // Filter the frames received from the FIR filter
+        // 6th order IIR
         for (size_t i = 0; i < frames_read; i++) {
-            bufferL[i] = iir_basic(bufferL[i], b_coeffs, history_X_L, 3, a_coeffs, history_Y_L, 3);
-            bufferR[i] = iir_basic(bufferR[i], b_coeffs, history_X_R, 3, a_coeffs, history_Y_R, 3);
+            bufferL[i] = iir_basic(bufferL[i], b_coeffs, history_X1_L, 3, a_coeffs, history_Y1_L, 3);
+            bufferR[i] = iir_basic(bufferR[i], b_coeffs, history_X1_R, 3, a_coeffs, history_Y1_R, 3);
+        }
+        for (size_t i = 0; i < frames_read; i++) {
+            bufferL[i] = iir_basic(bufferL[i], b_coeffs, history_X2_L, 3, a_coeffs, history_Y2_L, 3);
+            bufferR[i] = iir_basic(bufferR[i], b_coeffs, history_X2_R, 3, a_coeffs, history_Y2_R, 3);
+        }
+        for (size_t i = 0; i < frames_read; i++) {
+            bufferL[i] = iir_basic(bufferL[i], b_coeffs, history_X3_L, 3, a_coeffs, history_Y3_L, 3);
+            bufferR[i] = iir_basic(bufferR[i], b_coeffs, history_X3_R, 3, a_coeffs, history_Y3_R, 3);
         }
 
         // Interleave and write

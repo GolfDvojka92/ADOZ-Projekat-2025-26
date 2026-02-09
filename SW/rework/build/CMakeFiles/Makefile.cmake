@@ -50,4 +50,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/zadatak1.dir/DependInfo.cmake"
   "CMakeFiles/zadatak2.dir/DependInfo.cmake"
   "CMakeFiles/zadatak3.dir/DependInfo.cmake"
+  "CMakeFiles/zadatak4.dir/DependInfo.cmake"
   )

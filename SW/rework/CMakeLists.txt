@@ -21,7 +21,15 @@ add_executable(zadatak3
     src/direct_form_iir.c
     src/notch.c
 )
+add_executable(zadatak4
+    src/zadatak4.c
+    src/wav.c
+    src/fir.c
+    src/direct_form_iir.c
+    src/notch.c
+)
 
 # Link math library (for sin, pow, etc.)
 target_link_libraries(zadatak2 m)
 target_link_libraries(zadatak3 m)
+target_link_libraries(zadatak4 m)

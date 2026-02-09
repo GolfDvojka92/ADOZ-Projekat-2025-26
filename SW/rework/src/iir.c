@@ -1,5 +1,5 @@
-#include "iir.h"
-#include "conv.h"
+#include "../inc/iir.h"
+#include "../inc/conv.h"
 
 /**************************************
  * IIR filtar prvog reda

@@ -8,7 +8,6 @@
 #include "../inc/direct_form_iir.h"
 #include "../inc/wav.h"
 #include "../inc/high_pass_4350Hz.h"
-#include "../inc/low_pass_4350Hz.h"
 #include "../inc/fir.h"
 #include "../inc/notch.h"
 

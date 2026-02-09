@@ -2,9 +2,9 @@ zadatak2: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o \
-  CMakeFiles/zadatak2.dir/zadatak2.c.o \
-  CMakeFiles/zadatak2.dir/wav.c.o \
-  CMakeFiles/zadatak2.dir/fir.c.o \
+  CMakeFiles/zadatak2.dir/src/zadatak2.c.o \
+  CMakeFiles/zadatak2.dir/src/wav.c.o \
+  CMakeFiles/zadatak2.dir/src/fir.c.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libm.so \
@@ -38,11 +38,11 @@ zadatak2: \
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o:
 
-CMakeFiles/zadatak2.dir/zadatak2.c.o:
+CMakeFiles/zadatak2.dir/src/zadatak2.c.o:
 
-CMakeFiles/zadatak2.dir/wav.c.o:
+CMakeFiles/zadatak2.dir/src/wav.c.o:
 
-CMakeFiles/zadatak2.dir/fir.c.o:
+CMakeFiles/zadatak2.dir/src/fir.c.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libm.so:
 

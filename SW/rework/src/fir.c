@@ -1,7 +1,6 @@
 
-#include "math.h"
-#include "fir.h"
-#include "conv.h"
+#include "../inc/fir.h"
+#include "../inc/conv.h"
 
 int16_t fir_basic(int16_t input, int16_t* coeffs, int16_t *history, uint16_t n_coeff)
 {

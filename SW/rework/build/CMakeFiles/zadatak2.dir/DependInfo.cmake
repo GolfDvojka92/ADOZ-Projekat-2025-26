@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/aljosa/git/adoz_projekat/SW/rework/fir.c" "CMakeFiles/zadatak2.dir/fir.c.o" "gcc" "CMakeFiles/zadatak2.dir/fir.c.o.d"
-  "/home/aljosa/git/adoz_projekat/SW/rework/wav.c" "CMakeFiles/zadatak2.dir/wav.c.o" "gcc" "CMakeFiles/zadatak2.dir/wav.c.o.d"
-  "/home/aljosa/git/adoz_projekat/SW/rework/zadatak2.c" "CMakeFiles/zadatak2.dir/zadatak2.c.o" "gcc" "CMakeFiles/zadatak2.dir/zadatak2.c.o.d"
+  "/home/aljosa/git/adoz_projekat/SW/rework/src/fir.c" "CMakeFiles/zadatak2.dir/src/fir.c.o" "gcc" "CMakeFiles/zadatak2.dir/src/fir.c.o.d"
+  "/home/aljosa/git/adoz_projekat/SW/rework/src/wav.c" "CMakeFiles/zadatak2.dir/src/wav.c.o" "gcc" "CMakeFiles/zadatak2.dir/src/wav.c.o.d"
+  "/home/aljosa/git/adoz_projekat/SW/rework/src/zadatak2.c" "CMakeFiles/zadatak2.dir/src/zadatak2.c.o" "gcc" "CMakeFiles/zadatak2.dir/src/zadatak2.c.o.d"
   "" "zadatak2" "gcc" "CMakeFiles/zadatak2.dir/link.d"
   )
 

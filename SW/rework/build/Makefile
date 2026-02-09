@@ -155,179 +155,228 @@ zadatak3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/build
 .PHONY : zadatak3/fast
 
-direct_form_iir.o: direct_form_iir.c.o
-.PHONY : direct_form_iir.o
+#=============================================================================
+# Target rules for targets named zadatak4
+
+# Build rule for target.
+zadatak4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zadatak4
+.PHONY : zadatak4
+
+# fast build rule for target.
+zadatak4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak4.dir/build.make CMakeFiles/zadatak4.dir/build
+.PHONY : zadatak4/fast
+
+src/direct_form_iir.o: src/direct_form_iir.c.o
+.PHONY : src/direct_form_iir.o
 
 # target to build an object file
-direct_form_iir.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/direct_form_iir.c.o
-.PHONY : direct_form_iir.c.o
+src/direct_form_iir.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/src/direct_form_iir.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak4.dir/build.make CMakeFiles/zadatak4.dir/src/direct_form_iir.c.o
+.PHONY : src/direct_form_iir.c.o
 
-direct_form_iir.i: direct_form_iir.c.i
-.PHONY : direct_form_iir.i
+src/direct_form_iir.i: src/direct_form_iir.c.i
+.PHONY : src/direct_form_iir.i
 
 # target to preprocess a source file
-direct_form_iir.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/direct_form_iir.c.i
-.PHONY : direct_form_iir.c.i
+src/direct_form_iir.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/src/direct_form_iir.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak4.dir/build.make CMakeFiles/zadatak4.dir/src/direct_form_iir.c.i
+.PHONY : src/direct_form_iir.c.i
 
-direct_form_iir.s: direct_form_iir.c.s
-.PHONY : direct_form_iir.s
+src/direct_form_iir.s: src/direct_form_iir.c.s
+.PHONY : src/direct_form_iir.s
 
 # target to generate assembly for a file
-direct_form_iir.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/direct_form_iir.c.s
-.PHONY : direct_form_iir.c.s
+src/direct_form_iir.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/src/direct_form_iir.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak4.dir/build.make CMakeFiles/zadatak4.dir/src/direct_form_iir.c.s
+.PHONY : src/direct_form_iir.c.s
 
-fir.o: fir.c.o
-.PHONY : fir.o
+src/fir.o: src/fir.c.o
+.PHONY : src/fir.o
 
 # target to build an object file
-fir.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/fir.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/fir.c.o
-.PHONY : fir.c.o
+src/fir.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/src/fir.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/src/fir.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak4.dir/build.make CMakeFiles/zadatak4.dir/src/fir.c.o
+.PHONY : src/fir.c.o
 
-fir.i: fir.c.i
-.PHONY : fir.i
+src/fir.i: src/fir.c.i
+.PHONY : src/fir.i
 
 # target to preprocess a source file
-fir.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/fir.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/fir.c.i
-.PHONY : fir.c.i
+src/fir.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/src/fir.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/src/fir.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak4.dir/build.make CMakeFiles/zadatak4.dir/src/fir.c.i
+.PHONY : src/fir.c.i
 
-fir.s: fir.c.s
-.PHONY : fir.s
+src/fir.s: src/fir.c.s
+.PHONY : src/fir.s
 
 # target to generate assembly for a file
-fir.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/fir.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/fir.c.s
-.PHONY : fir.c.s
+src/fir.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/src/fir.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/src/fir.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak4.dir/build.make CMakeFiles/zadatak4.dir/src/fir.c.s
+.PHONY : src/fir.c.s
 
-notch.o: notch.c.o
-.PHONY : notch.o
+src/notch.o: src/notch.c.o
+.PHONY : src/notch.o
 
 # target to build an object file
-notch.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/notch.c.o
-.PHONY : notch.c.o
+src/notch.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/src/notch.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak4.dir/build.make CMakeFiles/zadatak4.dir/src/notch.c.o
+.PHONY : src/notch.c.o
 
-notch.i: notch.c.i
-.PHONY : notch.i
+src/notch.i: src/notch.c.i
+.PHONY : src/notch.i
 
 # target to preprocess a source file
-notch.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/notch.c.i
-.PHONY : notch.c.i
+src/notch.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/src/notch.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak4.dir/build.make CMakeFiles/zadatak4.dir/src/notch.c.i
+.PHONY : src/notch.c.i
 
-notch.s: notch.c.s
-.PHONY : notch.s
+src/notch.s: src/notch.c.s
+.PHONY : src/notch.s
 
 # target to generate assembly for a file
-notch.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/notch.c.s
-.PHONY : notch.c.s
+src/notch.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/src/notch.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak4.dir/build.make CMakeFiles/zadatak4.dir/src/notch.c.s
+.PHONY : src/notch.c.s
 
-wav.o: wav.c.o
-.PHONY : wav.o
+src/wav.o: src/wav.c.o
+.PHONY : src/wav.o
 
 # target to build an object file
-wav.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/wav.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/wav.c.o
-.PHONY : wav.c.o
+src/wav.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/src/wav.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/src/wav.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak4.dir/build.make CMakeFiles/zadatak4.dir/src/wav.c.o
+.PHONY : src/wav.c.o
 
-wav.i: wav.c.i
-.PHONY : wav.i
+src/wav.i: src/wav.c.i
+.PHONY : src/wav.i
 
 # target to preprocess a source file
-wav.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/wav.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/wav.c.i
-.PHONY : wav.c.i
+src/wav.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/src/wav.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/src/wav.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak4.dir/build.make CMakeFiles/zadatak4.dir/src/wav.c.i
+.PHONY : src/wav.c.i
 
-wav.s: wav.c.s
-.PHONY : wav.s
+src/wav.s: src/wav.c.s
+.PHONY : src/wav.s
 
 # target to generate assembly for a file
-wav.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/wav.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/wav.c.s
-.PHONY : wav.c.s
+src/wav.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/src/wav.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/src/wav.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak4.dir/build.make CMakeFiles/zadatak4.dir/src/wav.c.s
+.PHONY : src/wav.c.s
 
-zadatak1.o: zadatak1.c.o
-.PHONY : zadatak1.o
+src/zadatak1.o: src/zadatak1.c.o
+.PHONY : src/zadatak1.o
 
 # target to build an object file
-zadatak1.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak1.dir/build.make CMakeFiles/zadatak1.dir/zadatak1.c.o
-.PHONY : zadatak1.c.o
+src/zadatak1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak1.dir/build.make CMakeFiles/zadatak1.dir/src/zadatak1.c.o
+.PHONY : src/zadatak1.c.o
 
-zadatak1.i: zadatak1.c.i
-.PHONY : zadatak1.i
+src/zadatak1.i: src/zadatak1.c.i
+.PHONY : src/zadatak1.i
 
 # target to preprocess a source file
-zadatak1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak1.dir/build.make CMakeFiles/zadatak1.dir/zadatak1.c.i
-.PHONY : zadatak1.c.i
+src/zadatak1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak1.dir/build.make CMakeFiles/zadatak1.dir/src/zadatak1.c.i
+.PHONY : src/zadatak1.c.i
 
-zadatak1.s: zadatak1.c.s
-.PHONY : zadatak1.s
+src/zadatak1.s: src/zadatak1.c.s
+.PHONY : src/zadatak1.s
 
 # target to generate assembly for a file
-zadatak1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak1.dir/build.make CMakeFiles/zadatak1.dir/zadatak1.c.s
-.PHONY : zadatak1.c.s
+src/zadatak1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak1.dir/build.make CMakeFiles/zadatak1.dir/src/zadatak1.c.s
+.PHONY : src/zadatak1.c.s
 
-zadatak2.o: zadatak2.c.o
-.PHONY : zadatak2.o
+src/zadatak2.o: src/zadatak2.c.o
+.PHONY : src/zadatak2.o
 
 # target to build an object file
-zadatak2.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/zadatak2.c.o
-.PHONY : zadatak2.c.o
+src/zadatak2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/src/zadatak2.c.o
+.PHONY : src/zadatak2.c.o
 
-zadatak2.i: zadatak2.c.i
-.PHONY : zadatak2.i
+src/zadatak2.i: src/zadatak2.c.i
+.PHONY : src/zadatak2.i
 
 # target to preprocess a source file
-zadatak2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/zadatak2.c.i
-.PHONY : zadatak2.c.i
+src/zadatak2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/src/zadatak2.c.i
+.PHONY : src/zadatak2.c.i
 
-zadatak2.s: zadatak2.c.s
-.PHONY : zadatak2.s
+src/zadatak2.s: src/zadatak2.c.s
+.PHONY : src/zadatak2.s
 
 # target to generate assembly for a file
-zadatak2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/zadatak2.c.s
-.PHONY : zadatak2.c.s
+src/zadatak2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak2.dir/build.make CMakeFiles/zadatak2.dir/src/zadatak2.c.s
+.PHONY : src/zadatak2.c.s
 
-zadatak3.o: zadatak3.c.o
-.PHONY : zadatak3.o
+src/zadatak3.o: src/zadatak3.c.o
+.PHONY : src/zadatak3.o
 
 # target to build an object file
-zadatak3.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/zadatak3.c.o
-.PHONY : zadatak3.c.o
+src/zadatak3.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/src/zadatak3.c.o
+.PHONY : src/zadatak3.c.o
 
-zadatak3.i: zadatak3.c.i
-.PHONY : zadatak3.i
+src/zadatak3.i: src/zadatak3.c.i
+.PHONY : src/zadatak3.i
 
 # target to preprocess a source file
-zadatak3.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/zadatak3.c.i
-.PHONY : zadatak3.c.i
+src/zadatak3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/src/zadatak3.c.i
+.PHONY : src/zadatak3.c.i
 
-zadatak3.s: zadatak3.c.s
-.PHONY : zadatak3.s
+src/zadatak3.s: src/zadatak3.c.s
+.PHONY : src/zadatak3.s
 
 # target to generate assembly for a file
-zadatak3.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/zadatak3.c.s
-.PHONY : zadatak3.c.s
+src/zadatak3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak3.dir/build.make CMakeFiles/zadatak3.dir/src/zadatak3.c.s
+.PHONY : src/zadatak3.c.s
+
+src/zadatak4.o: src/zadatak4.c.o
+.PHONY : src/zadatak4.o
+
+# target to build an object file
+src/zadatak4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak4.dir/build.make CMakeFiles/zadatak4.dir/src/zadatak4.c.o
+.PHONY : src/zadatak4.c.o
+
+src/zadatak4.i: src/zadatak4.c.i
+.PHONY : src/zadatak4.i
+
+# target to preprocess a source file
+src/zadatak4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak4.dir/build.make CMakeFiles/zadatak4.dir/src/zadatak4.c.i
+.PHONY : src/zadatak4.c.i
+
+src/zadatak4.s: src/zadatak4.c.s
+.PHONY : src/zadatak4.s
+
+# target to generate assembly for a file
+src/zadatak4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zadatak4.dir/build.make CMakeFiles/zadatak4.dir/src/zadatak4.c.s
+.PHONY : src/zadatak4.c.s
 
 # Help Target
 help:
@@ -340,27 +389,31 @@ help:
 	@echo "... zadatak1"
 	@echo "... zadatak2"
 	@echo "... zadatak3"
-	@echo "... direct_form_iir.o"
-	@echo "... direct_form_iir.i"
-	@echo "... direct_form_iir.s"
-	@echo "... fir.o"
-	@echo "... fir.i"
-	@echo "... fir.s"
-	@echo "... notch.o"
-	@echo "... notch.i"
-	@echo "... notch.s"
-	@echo "... wav.o"
-	@echo "... wav.i"
-	@echo "... wav.s"
-	@echo "... zadatak1.o"
-	@echo "... zadatak1.i"
-	@echo "... zadatak1.s"
-	@echo "... zadatak2.o"
-	@echo "... zadatak2.i"
-	@echo "... zadatak2.s"
-	@echo "... zadatak3.o"
-	@echo "... zadatak3.i"
-	@echo "... zadatak3.s"
+	@echo "... zadatak4"
+	@echo "... src/direct_form_iir.o"
+	@echo "... src/direct_form_iir.i"
+	@echo "... src/direct_form_iir.s"
+	@echo "... src/fir.o"
+	@echo "... src/fir.i"
+	@echo "... src/fir.s"
+	@echo "... src/notch.o"
+	@echo "... src/notch.i"
+	@echo "... src/notch.s"
+	@echo "... src/wav.o"
+	@echo "... src/wav.i"
+	@echo "... src/wav.s"
+	@echo "... src/zadatak1.o"
+	@echo "... src/zadatak1.i"
+	@echo "... src/zadatak1.s"
+	@echo "... src/zadatak2.o"
+	@echo "... src/zadatak2.i"
+	@echo "... src/zadatak2.s"
+	@echo "... src/zadatak3.o"
+	@echo "... src/zadatak3.i"
+	@echo "... src/zadatak3.s"
+	@echo "... src/zadatak4.o"
+	@echo "... src/zadatak4.i"
+	@echo "... src/zadatak4.s"
 .PHONY : help
 
 

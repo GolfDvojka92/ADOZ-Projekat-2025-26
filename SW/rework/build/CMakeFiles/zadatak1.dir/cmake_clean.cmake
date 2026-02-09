@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/zadatak1.dir/link.d"
-  "CMakeFiles/zadatak1.dir/zadatak1.c.o"
-  "CMakeFiles/zadatak1.dir/zadatak1.c.o.d"
+  "CMakeFiles/zadatak1.dir/src/zadatak1.c.o"
+  "CMakeFiles/zadatak1.dir/src/zadatak1.c.o.d"
   "zadatak1"
   "zadatak1.pdb"
 )

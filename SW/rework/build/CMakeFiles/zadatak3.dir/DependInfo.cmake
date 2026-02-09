@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/aljosa/git/adoz_projekat/SW/rework/direct_form_iir.c" "CMakeFiles/zadatak3.dir/direct_form_iir.c.o" "gcc" "CMakeFiles/zadatak3.dir/direct_form_iir.c.o.d"
-  "/home/aljosa/git/adoz_projekat/SW/rework/fir.c" "CMakeFiles/zadatak3.dir/fir.c.o" "gcc" "CMakeFiles/zadatak3.dir/fir.c.o.d"
-  "/home/aljosa/git/adoz_projekat/SW/rework/notch.c" "CMakeFiles/zadatak3.dir/notch.c.o" "gcc" "CMakeFiles/zadatak3.dir/notch.c.o.d"
-  "/home/aljosa/git/adoz_projekat/SW/rework/wav.c" "CMakeFiles/zadatak3.dir/wav.c.o" "gcc" "CMakeFiles/zadatak3.dir/wav.c.o.d"
-  "/home/aljosa/git/adoz_projekat/SW/rework/zadatak3.c" "CMakeFiles/zadatak3.dir/zadatak3.c.o" "gcc" "CMakeFiles/zadatak3.dir/zadatak3.c.o.d"
+  "/home/aljosa/git/adoz_projekat/SW/rework/src/direct_form_iir.c" "CMakeFiles/zadatak3.dir/src/direct_form_iir.c.o" "gcc" "CMakeFiles/zadatak3.dir/src/direct_form_iir.c.o.d"
+  "/home/aljosa/git/adoz_projekat/SW/rework/src/fir.c" "CMakeFiles/zadatak3.dir/src/fir.c.o" "gcc" "CMakeFiles/zadatak3.dir/src/fir.c.o.d"
+  "/home/aljosa/git/adoz_projekat/SW/rework/src/notch.c" "CMakeFiles/zadatak3.dir/src/notch.c.o" "gcc" "CMakeFiles/zadatak3.dir/src/notch.c.o.d"
+  "/home/aljosa/git/adoz_projekat/SW/rework/src/wav.c" "CMakeFiles/zadatak3.dir/src/wav.c.o" "gcc" "CMakeFiles/zadatak3.dir/src/wav.c.o.d"
+  "/home/aljosa/git/adoz_projekat/SW/rework/src/zadatak3.c" "CMakeFiles/zadatak3.dir/src/zadatak3.c.o" "gcc" "CMakeFiles/zadatak3.dir/src/zadatak3.c.o.d"
   "" "zadatak3" "gcc" "CMakeFiles/zadatak3.dir/link.d"
   )
 
