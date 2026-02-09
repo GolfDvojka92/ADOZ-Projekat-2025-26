@@ -1,5 +1,7 @@
+#include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <sys/stat.h>
 #include <sys/types.h>
 #include "conv.h"
@@ -7,6 +9,8 @@
 #include "iir.h"
 #include "adaptive_filter.h"
 // #include "low_pass_8th_order.h"
+#include "high_pass_4350Hz.h"
+#include "low_pass_4350Hz.h"
 #include "low_pass_32th_order.h"
 #include "IIR_low_pass_filters.h"
 #include "fir.h"
@@ -14,7 +18,7 @@
 
 #define N 48000
 #define AUDIO_IO_SIZE 256
-#define INPUT_FILE "../../streams/WhiteNoise.wav"
+#define INPUT_FILE "../../streams/17.wav"
 
 static void ensure_output_dir(void) {
     struct stat st = {0};
@@ -31,12 +35,15 @@ int16_t interleavedIn[AUDIO_IO_SIZE * 2];
 int16_t interleavedOut[AUDIO_IO_SIZE * 2];
 int16_t inputL[AUDIO_IO_SIZE];
 int16_t inputR[AUDIO_IO_SIZE];
+int16_t tempL[AUDIO_IO_SIZE];
+int16_t tempR[AUDIO_IO_SIZE];
 int16_t bufferL[AUDIO_IO_SIZE];
 int16_t bufferR[AUDIO_IO_SIZE];
 int16_t adaptiveCoeffs[FILTER_ORDER];
 int16_t noiseFilter[AUDIO_IO_SIZE];
 int16_t history[FILTER_ORDER];
-int16_t historyFIR[LP_ORDER];
+int16_t historyFIR_L[H_PASS_ORDER];
+int16_t historyFIR_R[H_PASS_ORDER];
 int16_t history_x[2][3];
 int16_t history_y[2][3];
 
@@ -82,10 +89,9 @@ int main(void)
         }
 
         // Filter ALL frames_read, not half
-        // No changes
         for (size_t i = 0; i < frames_read; i++) {
-            bufferL[i] = inputL[i];
-            bufferR[i] = inputR[i];
+            bufferL[i] = fir_circular(inputL[i], high_pass_35th_order, historyFIR_L, H_PASS_ORDER, &stateL);
+            bufferR[i] = fir_circular(inputR[i], high_pass_35th_order, historyFIR_R, H_PASS_ORDER, &stateR);
         }
 
         // Interleave and write

@@ -1,0 +1,3 @@
+/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles/adaptive.dir
+/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles/edit_cache.dir
+/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles/rebuild_cache.dir
