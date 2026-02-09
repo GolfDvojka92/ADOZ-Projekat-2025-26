@@ -88,5 +88,5 @@ Kada izvorni signal filtriramo FIR-om 77-og reda i IIR-om 4-og reda dobijemo ova
 
 A kada izvorni signal filtriramo FIR-om 129-og reda i IIR-om 6-og reda dobijemo ovakav rezultat:
 
-![129th filtered signal plot](./Images/129_fir_4_iir_plot.png)
-![129th filtered signal spectrogram](./Images/129_fir_4_iir_spectrogram.png)
+![129th filtered signal plot](./Images/129_fir_6_iir_plot.png)
+![129th filtered signal spectrogram](./Images/129_fir_6_iir_spectrogram.png)
