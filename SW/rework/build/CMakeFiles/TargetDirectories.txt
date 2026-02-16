@@ -1,6 +1,0 @@
-/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles/zadatak1.dir
-/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles/zadatak2.dir
-/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles/zadatak3.dir
-/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles/zadatak4.dir
-/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles/edit_cache.dir
-/home/aljosa/git/adoz_projekat/SW/rework/build/CMakeFiles/rebuild_cache.dir

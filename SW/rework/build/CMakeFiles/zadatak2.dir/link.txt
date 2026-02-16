@@ -1,1 +1,0 @@
-/usr/bin/cc -Wl,--dependency-file=CMakeFiles/zadatak2.dir/link.d CMakeFiles/zadatak2.dir/src/zadatak2.c.o CMakeFiles/zadatak2.dir/src/wav.c.o CMakeFiles/zadatak2.dir/src/fir.c.o -o zadatak2  -lm

@@ -1,1 +1,0 @@
-/usr/bin/cc -Wl,--dependency-file=CMakeFiles/adaptive.dir/link.d CMakeFiles/adaptive.dir/main.c.o CMakeFiles/adaptive.dir/wav.c.o CMakeFiles/adaptive.dir/fir.c.o CMakeFiles/adaptive.dir/iir.c.o CMakeFiles/adaptive.dir/adaptive_filter.c.o -o adaptive  -lm
